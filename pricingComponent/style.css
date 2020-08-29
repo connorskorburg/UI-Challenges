@@ -11,9 +11,13 @@
     --gray: hsl(233, 13%, 49%);
     --darkGray: hsl(232, 13%, 33%);
 }
-body{
+html{
+    height: 100%;
+    background: url('/pricing-component-with-toggle-master/images/bg-bottom.svg') no-repeat left bottom,
+    url('/pricing-component-with-toggle-master/images/bg-top.svg') no-repeat right top;
     background-color: #f7f7ff;
 }
+
 header{
     width: 16rem;
     margin: 2rem auto 0 auto;
@@ -32,6 +36,7 @@ header section span{
     font-size: 1rem;
     color: var(--gray);
 }
+/* switch added from w3 schools */
 .switch {
     position: relative;
     display: inline-block;
@@ -95,7 +100,7 @@ input:checked + .slider:before {
 }
 
 #pricing {
-    height: 24rem;
+    height: 23rem;
     display: flex;
     align-items:flex-start;
     align-content:flex-start;
@@ -111,10 +116,10 @@ article {
     padding: 2rem;
 }
 article:first-child, article:last-child {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
 }
 article h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     padding: 1rem 0;
     border-bottom: 1px solid var(--lightGray);
 }
@@ -126,21 +131,20 @@ article h2 {
 }
 article h3 {
     color: var(--gray);
-    font-size: 0.95rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
 }
 article p {
     padding: 0.75rem;
     color: var(--gray);
     border-bottom: 1px solid var(--lightGray);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
 }
 
 article button {
     width: 100%;
     padding: 0.5rem 0;
     border-radius: 0.25rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.05rem;
     margin-top: 1.25rem;
     border: none;
     outline: none;
@@ -161,13 +165,13 @@ article:nth-of-type(2){
     color: #fff;
 }
 article:nth-of-type(2) p {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
 }
 article:nth-of-type(2) h2 {
     border-bottom: 1px solid #fff;
 }
 article:nth-of-type(2) h3 {
-    padding-top: 0.75rem;
+    padding-top: 1rem;
     color:#fff;
 }
