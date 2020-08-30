@@ -203,7 +203,7 @@
 #one-click-header .bg-blue-middle {
   z-index: -1;
   position: relative;
-  bottom: 15rem;
+  bottom: 13em;
   width: 70%;
   margin-right: 30%;
   border-bottom-right-radius: 30%;
@@ -213,7 +213,7 @@
 
 #one-click-header section:last-child {
   padding-right: 7.5%;
-  padding-left: 10rem;
+  padding-left: 10%;
 }
 
 #one-click-header section:last-child h2 {
@@ -245,13 +245,14 @@
   transition: all 500ms ease-in-out;
 }
 
-#dowload-header {
+#download-header {
+  padding-top: 1rem;
   width: 30rem;
   margin: 0 auto;
   text-align: center;
 }
 
-#dowload-header p {
+#download-header p {
   line-height: 1.75rem;
   color: #9194a1;
   margin: 1.5rem 0;
@@ -330,9 +331,9 @@
 }
 
 #faq-header {
-  padding: 0 7.5%;
+  padding: 1 7.5% 0 7.5%;
   text-align: center;
-  margin-top: 15rem;
+  margin-top: 14rem;
   width: 100%;
 }
 
@@ -346,5 +347,122 @@
   line-height: 1.75rem;
   color: #9194a1;
   margin: 1.5rem auto;
+}
+
+#main-faq {
+  width: 100%;
+  text-align: center;
+}
+
+#main-faq article {
+  width: 30rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.25rem 0;
+  border-top: 2px solid #f3f2f2;
+}
+
+#main-faq article span {
+  font-weight: 600;
+}
+
+#main-faq article img {
+  height: 0.75rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+#main-faq article:hover {
+  color: #fa5757;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+#main-faq p {
+  display: none;
+  width: 30rem;
+  line-height: 1.75rem;
+  color: #9194a1;
+  margin: 1rem auto;
+}
+
+#main-faq button {
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+  background-color: #5368df;
+  border: 2px solid #5368df;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.15rem;
+  margin: 2rem auto;
+}
+
+#main-faq button:hover {
+  color: #5368df;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+footer {
+  margin-top: 5rem;
+  width: 100%;
+  background-color: #5368df;
+}
+
+footer section {
+  padding: 3rem;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 30rem;
+}
+
+footer section h4 {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.25rem;
+}
+
+footer section h2 {
+  margin: 0 auto 2rem auto;
+  font-size: 2.25rem;
+}
+
+footer section input {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  width: 15rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+footer section button {
+  color: #fff;
+  background-color: #fa5757;
+  border: 2px solid #fa5757;
+  outline: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.25rem;
+  margin-left: 0.5rem;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer section button:hover {
+  color: #fa5757;
+  background-color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

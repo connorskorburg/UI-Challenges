@@ -178,7 +178,7 @@ $darkBlue: hsl(229, 31%, 21%);
     .bg-blue-middle {
         z-index: -1;
         position: relative;
-        bottom: 15rem;
+        bottom: 13em;
         width: 70%;
         margin-right: 30%;
         border-bottom-right-radius: 30%;
@@ -189,7 +189,7 @@ $darkBlue: hsl(229, 31%, 21%);
     }
     section:last-child {
         padding-right: 7.5%;
-        padding-left: 10rem;
+        padding-left: 10%;
         h2 {
             margin-top: 4rem;
         }
@@ -217,7 +217,8 @@ $darkBlue: hsl(229, 31%, 21%);
     }
 }
 
-#dowload-header {
+#download-header {
+    padding-top: 1rem;
     width: 30rem;
     margin: 0 auto;
     text-align: center;
@@ -285,9 +286,9 @@ $darkBlue: hsl(229, 31%, 21%);
 
 
 #faq-header{
-    padding: 0 7.5%;
+    padding: 1 7.5% 0 7.5%;
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 14rem;
     width: 100%;
     h2{
         margin: 0 auto;
@@ -298,5 +299,103 @@ $darkBlue: hsl(229, 31%, 21%);
         line-height: 1.75rem;
         color: $grayBlue;
         margin: 1.5rem auto;
+    }
+}
+
+
+#main-faq {
+    width: 100%;
+    text-align: center;
+    article {
+        width: 30rem;
+        margin: 0 auto;
+        display: flex;
+        padding: 1.25rem 0;
+        border-top: 2px solid rgb(243, 242, 242);
+        span {
+            font-weight: 600;
+        }
+        img{
+            height: 0.75rem;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: 0.5rem;
+        }
+    }
+    article:hover {
+        color: $red;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+    }
+    p{
+        display: none;
+        width: 30rem;
+        line-height: 1.75rem;
+        color: $grayBlue;
+        margin: 1rem auto;
+    }
+    button {
+        font-weight: 600;
+        display: inline-block;
+        color: #fff;
+        background-color: $blue;
+        border: 2px solid $blue;
+        outline: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.15rem;
+        margin: 2rem auto;
+    }
+    button:hover {
+        color: $blue;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+    }
+}
+
+footer {
+    margin-top: 5rem;
+    width: 100%;
+    background-color: $blue;
+    section {
+        padding: 3rem;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        width: 30rem;
+        h4{
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.25rem;
+        }
+        h2 {
+            margin: 0 auto 2rem auto;
+            font-size: 2.25rem;
+        }
+        input {
+            outline: none;
+            border: none;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+            width: 15rem;
+            padding: 0.75rem;
+            border-radius: 0.25rem;
+        }
+        button {
+            color: #fff;
+            background-color: $red;
+            border: 2px solid $red;
+            outline: none;
+            padding: 0.6rem 1rem;
+            border-radius: 0.25rem;
+            margin-left: 0.5rem;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+        }
+        button:hover{
+            color: $red;
+            background-color: #fff;
+            border: 2px solid #fff;
+            cursor: pointer;
+            transition: all 400ms ease-in-out;
+        }
     }
 }
