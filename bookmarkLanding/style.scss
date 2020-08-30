@@ -21,6 +21,7 @@ $darkBlue: hsl(229, 31%, 21%);
 
 html {
     width: 100%;
+    min-height: 100vh
 }
 // top nav bar
 #top-nav {
@@ -621,6 +622,57 @@ footer {
             }
             button {
                 width: 100%;
+            }
+        }
+    }
+}
+#nav-pop {
+    width: 100%;
+    min-height: 100%;
+    padding: 0 7.5%;
+    background-color: #000;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    img:hover {
+        transform: scale(1.1);
+        transition: all 400ms ease-in-out;
+        cursor: pointer;
+    }
+    section:first-child {
+        padding-top: 1rem;
+        display: flex;
+        padding-bottom: 10%;
+        border-bottom: 1px solid #fff;
+        img:last-child {
+            height: 1rem;
+            margin-left: auto;
+        }
+    }
+    section:last-child {
+        width: 100%;
+        a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding:8%;
+            border-bottom: 1px solid #fff;
+        }
+        a:hover {
+            color: $blue;
+            border-bottom: 1px solid $blue;
+            cursor: pointer;
+            transition: all 400ms ease-in-out;
+        }
+        article {
+            padding-top: 15%;
+            width: 100%;
+            display: flex;
+            img {
+                margin: 0 auto;
+                width: 10%;
             }
         }
     }
