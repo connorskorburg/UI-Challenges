@@ -34,5 +34,7 @@ document.getElementById('hamburger').addEventListener('click', function() {
 
 document.getElementById('close').addEventListener('click', function (){
     let navPop = document.getElementById('nav-pop');
+    let body = document.querySelector('body');
+    body.style.overflow = 'auto'
     navPop.style.display = 'none';
 })
