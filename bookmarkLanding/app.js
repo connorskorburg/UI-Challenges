@@ -24,6 +24,15 @@ for(let i = 1; i < 5; i++){
     })
 }
 
-document.getElementById('hambuger').addEventListener('click', function() {
-    
+document.getElementById('hamburger').addEventListener('click', function() {
+    let navPop = document.getElementById('nav-pop');
+    navPop.style.transition = 'all 500ms ease-in';
+    navPop.style.display = 'block';
+    let body = document.querySelector('body');
+    body.style.overflow = 'hidden';
 });
+
+document.getElementById('close').addEventListener('click', function (){
+    let navPop = document.getElementById('nav-pop');
+    navPop.style.display = 'none';
+})
