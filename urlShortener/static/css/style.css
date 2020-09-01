@@ -21,9 +21,11 @@ html, body{
 #top-nav {
     width: 100%;
     display: flex;
-    padding: 3rem 1rem 2rem 1rem;
+    padding: 3rem 2rem 2rem 2rem;
 }
-
+    #nav-inner {
+        display: none;
+    }
     #top-nav img:first-child{
         width: 125px;
     }
@@ -39,8 +41,10 @@ html, body{
 
 #mobile-nav {
     display: none;
+    width: calc(100% - 2rem);
     background-color: var(--purple);
     margin: 0 1rem;
+    position: absolute;
     padding: 1rem;
     border-radius: 0.5rem;
 }
@@ -252,3 +256,92 @@ html, body{
         display: flex;
         justify-content: space-between;
     }
+
+
+
+
+@media screen and (min-width: 700px) {
+    #top-nav {
+        padding: 3rem 5% 2rem 5%;
+    }
+    #top-nav img:first-child {
+        padding-top: 0.15rem;
+    }
+        #nav-inner {
+            display: flex;
+            width: 100%;
+        }
+            #nav-inner .nav-items a {
+                display: inline-block;
+                color: var(--gray);
+                text-decoration: none;
+                margin-left: 1rem;
+            }
+        .nav-items:first-child {
+            padding-top: 0.25rem;
+        }
+        .nav-items-right {
+            margin-left: auto;
+        }
+            .nav-items-right button {
+                font-size: 1rem;
+                background-color: var(--cyan);
+                border: none;
+                width: 6rem;
+                color: #fff;
+                font-weight: bold;
+                outline: none;
+                /* margin: 1rem 0; */
+                padding: 0.25rem 0;
+                border-radius: 1.75rem;
+            }
+            .nav-items-right a {
+                margin-right: 1rem;
+            }
+
+        #hamburger {
+            display: none;
+        }
+    
+    #hero-container {
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+        #hero-content {
+            margin-top: 5%;
+            display: block;
+            margin-left: 5%;
+        }
+            #hero-content h1, #hero-content p {
+                text-align: left;
+                padding-left: 0;
+            }
+    
+
+
+    #shorten {
+        padding: 0 5%;
+    }
+        #shorten form input {
+            width: 72.5%;
+            margin-right: 2.5%;
+            height: 3rem;
+            /* display: inline-block; */
+            /* vertical-align: top; */
+        }
+        .input {
+            margin-top: 0.5rem;
+            display: flex;
+            width: 100%;
+        }
+        #shorten form button {
+            margin-top: 0;
+            flex-grow: inherit;
+            display: inline-block;
+            width: 25%;
+            vertical-align: top;
+            height: 3rem;
+        }
+    
+}
