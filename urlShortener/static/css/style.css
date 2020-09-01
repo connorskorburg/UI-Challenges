@@ -4,7 +4,192 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+:root {
+    --purple: hsl(257, 27%, 26%);
+    --cyan: hsl(180, 66%, 49%);
+    --red: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayViolet: hsl(257, 7%, 63%);
+    --darkBlue: hsl(255, 11%, 22%);
+    --darkViolet: hsl(260, 8%, 14%);
+}
 
 html, body{
     width: 100%;
 }
+
+#top-nav {
+    width: 100%;
+    display: flex;
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+    #top-nav img:first-child{
+        width: 125px;
+    }
+
+    #top-nav img:last-child {
+        margin-left: auto;
+        width: 30px;
+    }
+    #top-nav img:last-child:hover {
+        transform: scale(1.1);
+        transition: all 400ms ease-in-out;
+    }
+
+#mobile-nav {
+    display: none;
+    background-color: var(--purple);
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+    #mobile-nav a {
+        font-size: 1.125rem;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    #mobile-nav a:nth-of-type(3) {
+        border-bottom: 0.01rem solid #fff;
+        padding-bottom: 2rem;
+    }
+    #mobile-nav a:nth-of-type(4) {
+        padding-top: 2rem;
+    }
+    #mobile-nav button {
+        font-size: 1.125rem;
+        background-color: var(--cyan);
+        border: none;
+        width: 100%;
+        color: #fff;
+        font-weight: bold;
+        outline: none;
+        margin: 1rem 0;
+        padding: 0.75rem 0;
+        border-radius: 1.75rem;
+    }
+
+    
+.img-container {
+    width: 100%;
+    overflow: hidden;
+}
+#hero-img {
+    width: 125%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+/* hero content */
+#hero-content {
+    width: 100%;
+    display: grid;
+}
+    #hero-content h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    #hero-content p {
+        font-size: 1.125rem;
+        text-align: center;
+        color: var(--gray);
+        padding: 1rem;
+    }
+    #hero-content button {
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: #fff;
+        outline: none;
+        border: none;
+        background-color: var(--cyan);
+        padding: 1rem;
+        width: 12rem;
+        margin: 1rem auto;
+        border-radius: 2rem;
+    }
+
+/* shorten link content */
+#shorten {
+    width: 100%;
+    padding: 0 1rem;
+    background-color: #f0f1f6;
+    margin-top: 10rem;
+}
+    #shorten form {
+        background-color: var(--purple);
+        background: url('/static/images/bg-shorten-mobile.svg') no-repeat var(--purple) top left 100%;
+        position: relative;
+        bottom: 5rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+        #shorten form span {
+            color: #fff;
+        }
+        #shorten input {
+            font-size: 1rem;
+            width: 100%;
+            border-radius: 0.25rem;
+            padding: 0.5rem;
+            outline: none;
+            border: none;
+        }
+        #shorten form button {
+            margin-top: 1rem;
+            width: 100%;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            background-color: var(--cyan);
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+        }
+
+    #shorten section {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+    }
+        #shorten section article p {
+            color: var(--grayViolet);
+        }
+        #shorten section article {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        #shorten section article h2 {
+            margin-bottom: 1.25rem;
+        }
+        #shorten .card {
+            z-index: 2;
+            background-color: #fff;
+            padding: 0rem 1.25rem 2rem 1.25rem;
+            border-radius: 0.25rem;
+        }
+        #shorten .card img {
+            background-color: var(--purple);
+            padding: 1rem;
+            border-radius: 50%;
+            position: relative;
+            bottom: 2.5rem;
+        }
+        #shorten .blue-line {
+            width: 10px;
+            background-color: var(--cyan);
+            margin: 0 auto;
+            height: 30rem;
+            position: absolute;
+            top: 25rem;
+            z-index: 1;
+            left: calc(50% - 0.25rem);
+
+        }
