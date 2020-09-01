@@ -163,6 +163,13 @@ html, body{
         display: flex;
         flex-direction: column;
     }
+        #advanced-stats {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+            #advanced-stats p {
+                color: var(--gray);
+            }
         #shorten section article p {
             color: var(--grayViolet);
         }
@@ -190,9 +197,9 @@ html, body{
             width: 10px;
             background-color: var(--cyan);
             margin: 0 auto;
-            height: 30rem;
+            height: 40rem;
             position: absolute;
-            top: 25rem;
+            top: 8rem;
             z-index: 1;
             left: calc(50% - 0.25rem);
 
@@ -323,6 +330,9 @@ html, body{
     #shorten {
         padding: 0 5%;
     }
+        #shorten form {
+            bottom: 3rem;
+        }
         #shorten form input {
             width: 72.5%;
             margin-right: 2.5%;
@@ -344,4 +354,36 @@ html, body{
             height: 3rem;
         }
     
+}
+@media screen and (min-width: 1100px) {
+    #hero-content {
+        margin-top: 10%;
+        display: block;
+        margin-left: 5%;
+    }
+    #shorten section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        #shorten .card img {
+            right: 25%;
+        }
+        #shorten .card {
+            height: 20rem;
+            align-items: flex-start;
+        }
+        #shorten .card:nth-of-type(1),
+        #shorten .card:nth-of-type(2) {
+            margin-right: 1.5rem;
+        }
+        #shorten .card:nth-of-type(2){
+            margin-top: 2rem;
+        }
+        #shorten .card:nth-of-type(3){
+            margin-top: 4rem;
+        }
+        #shorten .blue-line {
+            top: -10rem;
+            transform: rotate(90deg);
+        }
 }
