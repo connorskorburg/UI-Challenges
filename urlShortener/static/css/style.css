@@ -76,6 +76,11 @@ html, body{
         padding: 0.75rem 0;
         border-radius: 1.75rem;
     }
+    #mobile-nav button:hover {
+        background-color: var(--gray);
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+    }
 
     
 .img-container {
@@ -118,6 +123,12 @@ html, body{
         margin: 1rem auto;
         border-radius: 2rem;
     }
+    #hero-content button:hover {
+        background-color: var(--purple);
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+    }
+
 
 /* shorten link content */
 #shorten {
@@ -156,6 +167,13 @@ html, body{
             border-radius: 0.25rem;
             font-size: 1rem;
         }
+        #shorten form button:hover {
+            background-color: var(--gray);
+            cursor: pointer;
+            transition: all 400ms ease-in-out;
+        }
+
+
 
     #shorten section {
         position: relative;
@@ -231,6 +249,11 @@ html, body{
         border-radius: 2rem;
         padding: 0.75rem 0;
     }
+    #boost button:hover {
+        background-color: var(--gray);
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+    }
 
 
  /* Contact main content */
@@ -257,12 +280,22 @@ html, body{
         display: block;
         color: var(--grayViolet);
     }
+    #contact a:hover {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        transition: all 400ms ease-in-out;
+    }
     #contact section {
         margin: 0 auto;
         width: 70%;
         display: flex;
         justify-content: space-between;
     }
+        #contact section img:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            transition: all 400ms ease-in-out;
+        }
 
 
 
@@ -284,6 +317,10 @@ html, body{
                 text-decoration: none;
                 margin-left: 1rem;
             }
+            #nav-inner .nav-items a:hover {
+                border-bottom: 2px solid var(--gray);
+                transition: all 250ms ease-in-out;
+            }
         .nav-items:first-child {
             padding-top: 0.25rem;
         }
@@ -298,9 +335,14 @@ html, body{
                 color: #fff;
                 font-weight: bold;
                 outline: none;
-                /* margin: 1rem 0; */
                 padding: 0.25rem 0;
                 border-radius: 1.75rem;
+            }
+            .nav-items-right button:hover {
+                color: #fff;
+                cursor: pointer;
+                background-color: var(--purple);
+                transition: all 400ms ease-in-out;
             }
             .nav-items-right a {
                 margin-right: 1rem;
@@ -361,7 +403,16 @@ html, body{
         display: block;
         margin-left: 5%;
     }
+        #hero-content h1 {
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+            margin-bottom: 2rem;
+        }
+    #shorten form {
+        padding: 2rem 4rem;
+    }
     #shorten section {
+        /* bottom: 3rem; */
         flex-direction: row;
         justify-content: space-between;
     }
@@ -386,4 +437,43 @@ html, body{
             top: -10rem;
             transform: rotate(90deg);
         }
+
+
+
+    #advanced-stats h2{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    #advanced-stats p {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+    }
+
+
+    #boost h2 {
+        font-size: 2.5rem;
+    }
+    #boost button {
+        font-size: 1.5rem;
+    }
+
+
+    #contact {
+        display: block;
+    }
+    .contact-container {
+        display: flex;
+    }
+        .contact-container article {
+            flex: 1;
+            margin: 2rem 0;
+        }
+}
+
+@media screen and (min-width: 1850px) {
+    #shorten .blue-line {
+        top: -18rem;
+        height: 60rem;
+        transform: rotate(90deg);
+    }
 }
